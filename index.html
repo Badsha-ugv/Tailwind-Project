@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- end fo font awesome  -->
+
+    <link rel="stylesheet" href="css/output.css">
+    
+
+</head>
+<body class="bg-color-primary text-color-white">
+    
+    <header>
+        <nav class="container flex justify-between items-center">
+            <div class="py-5 text-color-secondary font-bold text-3xl ">
+
+                <a href="#homve">
+                    <span class="text-color-white">Light </span>Code.
+                </a>
+            </div>
+            <!-- menu item -->
+            <div>
+                <ul class="hidden lg:flex space-x-6 items-center ">
+                    <li><a href="" class="hover:text-color-secondary ease-in duration-200 ">Home</a></li>
+                    <li><a href=""  class="hover:text-color-secondary ease-in duration-200 ">Feature</a></li>
+                    <li><a href=""  class="hover:text-color-secondary ease-in duration-200 ">Testimonial</a></li>
+                    <li><a href=""  class="hover:text-color-secondary ease-in duration-200 ">Pricing</a></li>
+                    <li><a href="" class="hover:text-color-secondary ease-in duration-200 " >Blogh</a></li>
+                    <li><a href=""  class="hover:text-color-secondary ease-in duration-200 ">Contact</a></li>
+
+                    <li><button class="bg-color-secondary px-6 py-3 capitalize rounded-md font-bold hover:opacity-80 ease-in duration-200 ">free trail</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- mobile menu -->
+            <div id="dot-icon" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars dot-icon"></i>
+            </div>
+
+            <!-- mobile menu links -->
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20 ">
+                    <li><a id="m-link" href="" class="hover:text-color-secondary ease-in duration-200 ">Home</a></li>
+                    <li><a id="m-link" href="" class="hover:text-color-secondary ease-in duration-200 ">Feature</a></li>
+                    <li><a id="m-link" href="" class="hover:text-color-secondary ease-in duration-200 ">Testimonial</a></li>
+                    <li><a id="m-link" href="" class="hover:text-color-secondary ease-in duration-200 ">Pricing</a></li>
+                    <li><a id="m-link" href="" class="hover:text-color-secondary ease-in duration-200 ">Blogh</a></li>
+                    <li><a id="m-link" href="" class="hover:text-color-secondary ease-in duration-200 ">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- script  -->
+    <script>
+        const dot = document.getElementById("dot-icon");
+        const menu = document.getElementById("menu");
+        const menuLink = document.getElementById("m-link");
+
+        const dot_icon = document.querySelector(".dot-icon"); 
+
+        dot.addEventListener("click", ()=>{
+            menu.classList.toggle('hidden');
+            dot_icon.classList.toggle('fa-xmark');
+
+
+        })
+
+    </script>
+</body>
+</html>
